@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverymedia - clone</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- FeatherIcons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    
+    <!-- Navbar Section Start -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="img/traversymedia.png" alt="">
+        </div>
+
+        <div class="nav-link">
+            <a href="#" class="nav-item">Courses</a>
+            <a href="#" class="nav-item">eBook</a>
+            <a href="#" class="nav-item">Freelance Mastery</a>
+            <a href="#" class="nav-item">Youtube</a>
+            <a href="#" class="nav-item">FAQ</a>
+            <a href="#" class="nav-item">Blog</a>
+            <a href="#" class="nav-item">Guide</a>
+            <a href="#" class="nav-item" class="login">Log in</a>
+        </div>
+        <a href="#" class="menu" ><i data-feather="menu" id="hamburger-menu" class="hamburger-"></i></a>
+
+    </nav>
+    <!-- Navbar Section End -->
+
+
+    <!-- Hero Section Start -->
+    <section class="hero">
+        <h2>Traversy Media</h2>
+
+        <p class="subtitle">Web Development Courses For <span>Everyone</span></p>
+
+        <p class="tagline">Practical project-based courses that are easy to understand and straight to the point with NO FLUFF</p>
+
+        <a href="#" class="btn btn-primary">Start Learning Now</a>
+
+        <div class="hero-explain">
+            <div>
+                <i class="bi bi-tag"></i>
+                <h3>11+</h3>
+                <p>Courses</p>
+            </div>
+            <div>
+                <i class="bi bi-clock-fill"></i>
+                <h3>25+</h3>
+                <p>Hours of Content</p>
+            </div>
+            <div>
+                <i class="bi bi-people-fill"></i>
+                <h3>500K+</h3>
+                <p>Course Students</p>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Form Section Start -->
+    <div class="form">
+        <h2>NOTIFY ME OF NEW COURSES</h2>
+
+        <form action="">
+            <input type="email" name="" id="" placeholder="Email">
+            <button class="btn btn-black">Notify Me</button>
+        </form>
+    </div>
+    <!-- Form Section End -->
+
+    <!-- Course Section Start -->
+    <section class="course">
+        <div class="latest-course">
+            <h2><span>Latest</span> Courses</h2>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="img/course-img/js.png" alt="" class="card-logo">
+                    <p class="level">ALL LEVELS</p>
+                    <p class="card-title">Modern JavaScript From The Beginning 2.0</p>
+                    <div class="card-link">
+                        <i class="bi bi-cart3"></i>
+                        <a href="#">Get it now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/course-img/tailwind.png" alt="" class="card-logo">
+                    <p class="level">BEGINNER</p>
+                    <p class="card-title">Tailwind From Scratch</p>
+                    <div class="card-link">
+                        <i class="bi bi-cart3"></i>
+                        <a href="#">Get it now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/course-img/react.png" alt="" class="card-logo">
+                    <p class="level">BEGINNER - INTERMEDIATE</p>
+                    <p class="card-title">React Front to Back</p>
+                    <div class="card-link">
+                        <i class="bi bi-cart3"></i>
+                        <a href="#">Get it now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popular-course">
+            <h2><span>Popular</span> Courses</h2>
+
+            <div class="card-container">
+                <div class="container">
+                    <div class="card">
+                        <img src="img/course-img/traversy-50projects.png" alt="" class="card-logo">
+                        <p class="level">ALL LEVELS</p>
+                        <p class="card-title">50 Projects in 50 Days - HTML CSS & JavaScript</p>
+                        <div class="card-link">
+                            <i class="bi bi-cart3"></i>
+                            <a href="#">Get it now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/course-img/html.png" alt="" class="card-logo">
+                        <p class="level">BEGINNER</p>
+                        <p class="card-title">Modern HTML & CSS From The Beginning</p>
+                        <div class="card-link">
+                            <i class="bi bi-cart3"></i>
+                            <a href="#">Get it now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/course-img/nodejs.png" alt="" class="card-logo">
+                        <p class="level">INTERMEDIATE</p>
+                        <p class="card-title">Node.js API Masterclass</p>
+                        <div class="card-link">
+                            <i class="bi bi-cart3"></i>
+                            <a href="#">Get it now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="card">
+                        <img src="img/course-img/nextjs.png" alt="" class="card-logo">
+                        <p class="level">INTERMEDIATE</p>
+                        <p class="card-title">Next.js Dev To Deployment</p>
+                        <div class="card-link">
+                            <i class="bi bi-cart3"></i>
+                            <a href="#">Get it now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/course-img/htmlcssjs.png" alt="" class="card-logo">
+                        <p class="level">ALL LEVELS</p>
+                        <p class="card-title">20 Vanilla JavaScript Projects</p>
+                        <div class="card-link">
+                            <i class="bi bi-cart3"></i>
+                            <a href="#">Get it now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/course-img/django.png" alt="" class="card-logo">
+                        <p class="level">INTERMEDIATE</p>
+                        <p class="card-title">Python Django Dev To Deployment</p>
+                        <div class="card-link">
+                            <i class="bi bi-cart3"></i>
+                            <a href="#">Get it now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn btn-primary" id="show-all-course">Show All Courses</a>
+    </section>
+
+    <section class="premium-course">
+        <h2>Join Our Premium Course</h2>
+        <p>Buy standalone courses or get  access to all our courses as long as you have an active membership.</p>
+
+        <div class="container">
+            <div class="premium-card card-1">
+                <h3>Single Course</h3>
+                <p class="price">$25/Course</p>
+                <p class="tagline">Buy once, own it forever</p>
+                <ul>
+                    <li><i class="bi bi-check-lg"></i> Purchase a Specific Course</li>
+                    <li><i class="bi bi-check-lg"></i> Lifetime Course Access</li>
+                    <li><i class="bi bi-check-lg"></i> Full HD Video & HQ Audio</li>
+                    <li><i class="bi bi-check-lg"></i> Extra course attachments & exercises</li>
+                    <li><i class="bi bi-check-lg"></i> Certificate of Completion</li>
+                    <li><i class="bi bi-check-lg"></i> Access To Discord Community</li>
+                    <li><i class="bi bi-check-lg"></i> Risk-free: 15 Days Refund Period</li>
+                </ul>
+
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+            <div class="premium-card card-2">
+                <h3>Monthly Membership</h3>
+                <p class="price">$25/Month</p>
+                <p class="tagline">Become a Pro Member</p>
+                <ul>
+                    <li><i class="bi bi-check-lg"></i> Access To All Courses</li>
+                    <li><i class="bi bi-check-lg"></i> 250+ Hours of Content</li>
+                    <li><i class="bi bi-check-lg"></i> Full HD Video & HQ Audio</li>
+                    <li><i class="bi bi-check-lg"></i> Extra course attachments & exercises</li>
+                    <li><i class="bi bi-check-lg"></i> Certificate of Completion</li>
+                    <li><i class="bi bi-check-lg"></i> Access To Discord Community</li>
+                    <li><i class="bi bi-check-lg"></i> Priority Support</li>
+                    <li><i class="bi bi-check-lg"></i> Risk-free: 15 Days Refund Period</li>
+                </ul>
+
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+            <div class="premium-card card-3">
+                <h3>Yearly Membership</h3>
+                <p class="price">$200/Year</p>
+                <p class="tagline">Become a VIP Member</p>
+                <ul>
+                    <li><i class="bi bi-check-lg"></i> Save 34% Compared to Monthly</li>
+                    <li><i class="bi bi-check-lg"></i> 250+ Hours of Content</li>
+                    <li><i class="bi bi-check-lg"></i> Exclusive Content</li>
+                    <li><i class="bi bi-check-lg"></i> Full HD Video & HQ Audio</li>
+                    <li><i class="bi bi-check-lg"></i> Extra course attachments & exercises</li>
+                    <li><i class="bi bi-check-lg"></i> Certificate of Completion</li>
+                    <li><i class="bi bi-check-lg"></i> Access To Discord Community</li>
+                    <li><i class="bi bi-check-lg"></i> Priority Support</li>
+                    <li><i class="bi bi-check-lg"></i> Risk-free: 15 Days Refund Period</li>
+                </ul>
+
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- Course Section End -->
+
+    <!-- Webdev Guide Section Start -->
+    <section class="guide">
+        <img src="img/traversy-tablet.png" alt="">
+        <div>
+            <h2>Brad Traversy's</h2>
+            <p class="subtitle">Web Dev Guide</p>
+            <p>The most complete guide to web development technologies on the planet.</p>
+            <p>This guide also goes into different programming concepts, careers and even mental health.</p>
+            <a href="#" class="btn btn-black">GET IT FOR $9.99</a>
+        </div>
+    </section>
+    <!-- Webdev Guide Section End -->
+
+    <!-- Mastery Section Start -->
+    <section class="mastery">
+        <div class="text">
+            <h2>New Course</h2>
+            <h3 class="subtitle">Freelance Mastery</h3>
+            <p>Brad Traversy and Kyle Prinsloo have teamed up to bring you a business-based course to show you how to create a successful freelancing business from the ground up.</p>
+            <a href="#" class="btn btn-primary">FIND OUT MORE</a>
+        </div>
+
+        <img src="img/freelance-mastery.png" alt="">
+    </section>
+    <!-- Mastery Section End -->
+
+    <!-- Bard Traversy Section Start -->
+    <section class="bard">
+        <h2 class="title">Who Is <span>Brad Traversy?</span></h2>
+
+        <div class="container">
+            <img src="img/bard-traversy.png" alt="">
+
+            <div class="text-container">
+                <div class="text">
+                    <p>I started coding in 2007 at the age of 26. I became a full-time educator & content creator in 2016.</p>
+                    <p>I show people that they don't have to be a straight A student or a genius to learn to code. I break down complex concepts by showing you how to implement them in project-based courses and tutorials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bard Traversy Section End -->
+
+    <!-- Youtube Section Start -->
+    <section class="youtube">
+        <img src="img/traversy-laptop.png" alt="">
+
+        <div class="container">
+            <h2>Traversy Media on YouTube</h2>
+            <p>Our YouTube channel has over <span>2 million subscribers</span> with <span>1000+</span> free tutorials and crash courses</p>
+            <a href="#" class="btn btn-black">VIEW CHANNEL</a>
+        </div>
+    </section>
+    <!-- Youtube Section End -->
+
+    <!-- Crash Cours Section Start -->
+    <section class="crash-course">
+        <h2>Popular Crash Courses</h2>
+        <p>Visit The Traversy Media <span>YouTube channel</span> for many more</p>
+
+        <div class="container">
+            <a href="#"><img src="img/crash-course/webdev.jpg" alt=""></a>
+            <a href="#"><img src="img/crash-course/react.jpg" alt=""></a>
+            <a href="#"><img src="img/crash-course/vue.jpg" alt=""></a>
+            <a href="#"><img src="img/crash-course/angular.jpg" alt=""></a>
+            <a href="#"><img src="img/crash-course/next.jpg" alt=""></a>
+            <a href="#"><img src="img/crash-course/typescript.jpg" alt=""></a>
+            <a href="#"><img src="img/crash-course/svelte.jpg" alt=""></a>
+            <a href="#"><img src="img/crash-course/node.jpg" alt=""></a>
+        </div>
+    </section>
+    <!-- Crash Cours Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <img src="img/traversymedia.png" alt="">
+
+        <p class="copyright">© 2023 Traversy Media. All Rights Reserved</p>
+
+        <div class="socials">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <script>
+        feather.replace()
+      </script>
+    <!-- My Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

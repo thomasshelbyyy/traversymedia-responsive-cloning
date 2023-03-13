@@ -1,0 +1,721 @@
+:root {
+    --primary: #3195ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 3000px;
+}
+
+/* Navbar Section */
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar .nav-logo img {
+    width: 100%;
+}
+
+.navbar .nav-link {
+    right: 0;
+}
+.navbar .nav-link a {
+    padding: 0 0.6rem;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.navbar .nav-link .login {
+    margin-left: 1rem;
+}
+
+.navbar .menu {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    display: block;
+    padding: 6rem 0;
+    background: rgba(0, 0,0, 0.7) url('../img/bg.jpg');
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    background-blend-mode: darken;
+}
+
+.hero h2 {
+    font-size: 1.4rem;
+    padding: 3rem 0  0rem;
+    color: var(--primary);
+}
+
+.hero .tagline {
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 40rem;
+    font-size: 1.2rem;
+}
+.hero .subtitle {
+    margin: 0 auto;
+    width: 40rem;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.hero .subtitle span {
+    color: var(--primary);
+}
+
+.btn {
+    font-size: 1.3rem;
+    padding: 0.6rem 1.3rem;
+    border-radius: 0.3rem;
+}
+
+.hero .hero-explain {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    padding-bottom: 7rem;
+}
+.hero .hero-explain div {
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.hero .hero-explain div h3{
+    font-size: 3rem;
+}
+.hero .hero-explain div p{
+    font-size: 1rem;
+}
+
+
+/* Form Section */
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: var(--primary);
+}
+
+.form h2 {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.form form {
+    /* background-color: aquamarine; */
+    /* padding: 5rem; */
+    width: 50%;
+}
+.form form input {
+    width: 70%;
+    padding: 0.7rem 0 0.7rem 1rem;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+    flex: 1 1 80%;
+}
+
+.form form input::placeholder {
+    color: #b0b0b0;
+}
+
+
+/* Courses Section */
+.course {
+    /* display: block; */
+    padding: 2rem 2rem 7rem 2rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.course .latest-course h2,
+.course .popular-course h2 {
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.course .latest-course h2 span,
+.course .popular-course h2 span  {
+    color: var(--primary);
+}
+
+.course .latest-course .card-container,
+.course .popular-course .card-container .container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.4rem;
+    width: 30%;
+}
+
+.card img {
+    position: absolute;
+    margin: 0.5rem 0.5rem 0 0;
+    right: 0;
+    top: 0;
+    width: 5rem;
+}
+
+.card .level {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: var(--primary);
+    z-index: 99;
+}
+
+.card .card-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+}
+
+.card .card-link {
+    font-size: 1.7rem;
+    color: #2a629e;
+}
+
+.card .card-link a {
+    padding-left: 0.3rem;
+    color: #2a629e;
+    font-size: 1.3rem;
+}
+
+.card .card-link a:hover {
+    color: rgb(206, 50, 50);
+}
+
+#show-all-course {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Premium Courses Section */
+.premium-course {
+    padding: 2rem 1rem;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+}
+
+.premium-course h2 {
+    font-size: 2rem;
+}
+
+.premium-course p {
+    font-size: 1.2rem;
+}
+
+.premium-course .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.premium-card {
+    width: 30%;
+    margin: 0 1rem;
+    background-color: #010101;
+    padding: 2rem 2rem 4rem 2rem;
+    height: 100%;
+    border-radius: 0.3rem;
+}
+
+.premium-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+.premium-card .price {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.premium-card .tagline {
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.premium-card ul {
+    margin: 1.5rem 0;
+}
+.premium-card ul li {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    list-style: none;
+}
+
+.premium-card ul li i {
+    color: var(--primary);
+}
+
+.card-1 {
+    background-color: #2c3e50;
+}
+
+.card-2 {
+    background-color: #fff;
+}
+
+.card-2 .tagline,
+.card-2 .price,
+.card-2 ul li {
+    color: #2c3e50;
+}
+
+.card-3 {
+    background-color: #1e1e1e;
+}
+
+.card-3 .tagline {
+    color: #fff;
+}
+
+
+/* Guide Section */
+.guide {
+    display: flex;
+    padding: 4rem 5rem;
+    justify-content: space-between;
+    background-color: rgb(20,63,125);
+    color: #fff;
+}
+
+.guide div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    padding: 0 2rem 0 4rem;
+}
+
+.guide div h2 {
+    font-size: 1.4rem;
+}
+
+.guide div p {
+    margin-bottom: 1.1rem;
+    font-size: 1.2rem;
+}
+
+.guide div .subtitle {
+    font-size: 2rem;
+    padding-top: 0.2rem;
+    font-weight: 700;
+}
+
+.guide div a {
+    width: fit-content;
+}
+
+
+/* Mastery Section */
+.mastery {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+}
+
+.mastery .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    color: #2c3450;
+}
+
+.mastery .text h2 {
+    font-size: 1.2rem;
+}
+
+.mastery .text .subtitle {
+    font-size: 1.8rem;
+}
+
+.mastery .text p {
+    font-size: 1rem;
+    margin: 0.7rem 0;
+}
+
+.mastery .text a {
+    width: fit-content;
+}
+.mastery img {
+    width: 25rem;
+    /* background-color: #000; */
+    padding-right: 5rem;
+}
+
+
+/* Bard Traversy Section */
+.bard {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem;
+}
+
+.bard .title {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.bard .title span {
+    color: var(--primary);
+}
+
+.bard .container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+.bard .container .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.bard .container .text-container .text {
+    border: 1px solid #333;
+    padding: 2.5rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 0.2rem;
+}
+
+.bard .container .text-container .text p:first-child {
+    padding-bottom: 1rem;
+}
+
+
+
+/* Youtube Sextion */
+.youtube {
+    background-image: url('../img/youtube-section-bg.jpg');
+    background-color: rgb(113, 178, 247)  ;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    color: #fff;
+}
+
+.youtube .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    text-align: center;
+}
+
+.youtube .container h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.youtube .container p {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+.youtube .container p span {
+    font-weight: 700;
+}
+
+.youtube .container a {
+    width: fit-content;
+    margin: 0 auto;
+    
+}
+
+/* Crash course Section */
+.crash-course {
+    padding: 3rem 4rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.crash-course h2 {
+    font-size: 2.4rem;
+}
+
+.crash-course p {
+    font-size: 1.3rem;
+    padding-bottom: 2.3rem;
+}
+
+.crash-course p span {
+    color: var(--primary);
+}
+
+.crash-course a img {
+    width: 100%;
+    /* border: 1px solid #fff; */
+    border-radius: 0.2rem;
+}
+
+.crash-course a img:hover {
+    filter: brightness(70%);
+}
+
+.crash-course .container {
+    display: grid;
+    column-gap: 1.5rem;
+    row-gap: 1.9rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #161e2a;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    color: #fff;
+}
+
+footer img {
+    width: 2.7rem;
+}
+
+footer .copyright {
+    font-size: 1.4rem;
+    margin: auto;
+}
+
+footer .socials a {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #fff;
+    margin: auto 0.4rem;
+}
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1336px) {
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: inline-block;
+        color: #fff;
+    }
+
+    .navbar .menu i {
+        font-size: 10rem;
+    }
+
+    .navbar .nav-link {
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: -100rem;
+        /* top: 5rem; */
+        padding: 1rem 2rem;
+        transition: 1s;
+    }
+
+    .navbar .nav-link.active {
+        top: 5rem;
+    }
+
+    .navbar .nav-link .nav-item {
+        margin-bottom: 1.2rem;
+        display: flex;
+    }
+
+    .hero .subtitle {
+        font-size: 2rem;
+        width: 70%;
+    }
+
+    .hero .tagline {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .hero .hero-explain {
+        display: none;
+    }
+
+    .form {
+        display: block;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .form form {
+        margin: 2rem auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 2rem 0; */
+    }
+
+    .form h2 {
+        font-size: 1.3rem;
+    }
+
+    .form form input {
+        margin-bottom: 1.3rem;
+    }
+
+    .course .latest-course .card-container,
+    .course .popular-course .card-container .container {
+        flex-direction: column;
+        align-items: center;
+        /* width: 100%; */
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .premium-course .container {
+        flex-direction: column;
+    }
+
+    .premium-card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .guide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guide div {
+        padding: 2rem 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .guide div p {
+        font-size: 1rem;
+    }
+
+    .guide div a {
+        display: inline-block;
+        margin: auto;
+    }
+
+    .mastery {
+        flex-direction: column-reverse;
+    }
+
+    .mastery .text {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bard .container {
+        flex-direction: column;
+    }
+
+    .bard .container .text-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bard .container .text-container .text p {
+        font-size: 1rem;
+    }
+
+    .youtube {
+        flex-direction: column;
+    }
+
+    .crash-course .container {
+        display: block;
+    }
+
+    .crash-course .container img {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer img {
+        margin: 0 auto;
+    }
+
+    footer .copyright {
+        margin: 1.2rem 0;
+        font-size: 1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+    
+}
+
+/* Utility */
+.btn-primary {
+    color: #fff;
+    background-color: #0072EF;
+}
+
+.btn-black {
+    color: #fff;
+    background-color: #000;
+}
